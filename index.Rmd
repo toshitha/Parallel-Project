@@ -1,5 +1,5 @@
 ---
-title: "Nick's Website"
+title: "15-418 Final Project"
 ---
 
-Hello, World!
+by Anisha Padwekar and Toshitha Jagadeesh
