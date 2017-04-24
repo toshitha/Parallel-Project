@@ -1,5 +1,11 @@
 ---
-title: "15-418 Final Project"
+title: "Sparse Matrix Multiplication"
 ---
 
 by Anisha Padwekar and Toshitha Jagadeesh
+
+## Summary
+We will be implementing Sparse Matrix Multiplication in parallel for this project. Our goal is to find the most efficient way to do this computation in parallel.
+
+## Background
+Sparse matrices are matrices that have many zero elements in the matrix. Sparse matrices are used in different areas of study from combinatoricsto network theory. When using these matrices to analyze 

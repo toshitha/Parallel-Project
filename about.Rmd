@@ -1,4 +1,8 @@
 ---
-title: "Proposal"
+title: "Project Proposal"
 ---
 
+# Sparse Matrix Multiplication
+## by Anisha Padwekar and Toshitha Jagadeesh 
+
+### Summary
