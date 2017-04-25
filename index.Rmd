@@ -43,4 +43,4 @@ We decided to work on the GHC machines because we plan to use OpenMP to parallel
 
 *5/4 - 5/8:* Finish test cases (Toshitha). Begin testing all code that is written (Toshitha and Anisha)
 
-*5/8 - 5/10:* Finalize all the code and finish testing. Run on our benchmark matrices and create the final presentation.
+*5/8 - 5/10:* Finalize all the code and finish testing (both). Run on our benchmark matrices (Anisha) and create the final presentation (Toshitha).
