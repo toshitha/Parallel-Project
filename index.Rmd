@@ -12,7 +12,6 @@ Sparse matrices, like the large datasets they represent, are becoming increasing
 
 Matrix multiplication intrinsically has large communication overhead, with two reads and a write for the most naïve algorithm. Dense matrix algorithms have traditionally used memory locality to reduce cache misses and reduce communication overhead. In general, blocking schemes are used with dense matrix algorithms. Sparse matrices add the additional complexity that data is not cleanly located in blocks.
 
-Sparse matrices are matrices that have many zero elements in the matrix. Sparse matrices are used in different areas of study from combinatorics to network theory. When using these matrices to analyze
 
 ## The Challenge
 This problem is challenging because we will be attempting to speed up the process of multiplying matrices together. We have some ideas from different papers and our prior knowledge in ways to make the multiplication more efficient. However, we will have to test out the different methods such as blocking, etc. Likewise, sparse matrices are different from regular dense matrix multiplication due to the higher presence of zeros. Due to this factor, the matrices themselves can be represented slightly differently in order to make the multiplication more efficient (since 0 values would not need to multiplied). We foresee that finding the best way to represent the matrices will be difficult.
