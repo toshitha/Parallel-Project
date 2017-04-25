@@ -8,4 +8,17 @@ by Anisha Padwekar and Toshitha Jagadeesh
 We will be implementing Sparse Matrix Multiplication in parallel for this project. Our goal is to find the most efficient way to do this computation in parallel.
 
 ## Background
-Sparse matrices are matrices that have many zero elements in the matrix. Sparse matrices are used in different areas of study from combinatoricsto network theory. When using these matrices to analyze 
+Sparse matrices are matrices that have many zero elements in the matrix. Sparse matrices are used in different areas of study from combinatoricsto network theory. When using these matrices to analyze
+
+## The Challenge
+This problem is challenging because we will be attempting to speed up the process of multiplying matrices together. We have some ideas from different papers and our prior knowledge in ways to make the multiplication more efficient. However, we will have to test out the different methods such as blocking, etc. Likewise, sparse matrices are different from regular dense matrix multiplication due to the higher presence of zeros. Due to this factor, the matrices themselves can be represented slightly differently in order to make the multiplication more efficient (since 0 values would not need to multiplied). We foresee that finding the best way to represent the matrices will be difficult.
+
+## Resources
+We will be using the GHC machines to complete our project. As of now, our code base will be starting from scratch. However, we will use a couple papers as reference for ways to optimize the multiplication. 
+
+## Goals and Deliverables
+
+
+## Platform Choice
+
+## Schedule
