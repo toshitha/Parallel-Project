@@ -2,6 +2,6 @@
 title: "Checkpoint"
 ---
 
-Training over smaller graphs and using larger graphs as benchmark.
+We were able to understand the algorithms and optimizations presented in the paper that we wanted to follow. With our deeper understanding of the material, we have started brainstorming ways to create the parallel versions of the methods used for sparse matrix multiplication. However, understanding the methods took a little longer than expected so we are a little behind in testing the serial version of the code. 
 
-
+We were also able to find the data set that we will select matrices from found here (https://www.cise.ufl.edu/research/sparse/matrices/list_by_id.html). In finding this data set, we also mitigate one of the challenges we originially had in terms of figuring out how to represent our sparse matrix initially. 

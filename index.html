@@ -205,7 +205,9 @@ $(document).ready(function () {
 </div>
 <div id="background" class="section level2">
 <h2>Background</h2>
-<p>Sparse matrices are matrices that have many zero elements in the matrix. Sparse matrices are used in different areas of study from combinatoricsto network theory. When using these matrices to analyze</p>
+<p>Sparse matrices, like the large datasets they represent, are becoming increasingly prevalent as a way to reduce memory footprint. The rare use of the majority of words makes sparse matrices common in natural language processing. Likewise, in recommendation systems most users have only rated a small subset of all possible objects. In these cases, algorithms that use these data sets are often based on matrix multiplication, so it is important to find a fast method of multiplying these matrices.</p>
+<p>Matrix multiplication intrinsically has large communication overhead, with two reads and a write for the most naïve algorithm. Dense matrix algorithms have traditionally used memory locality to reduce cache misses and reduce communication overhead. In general, blocking schemes are used with dense matrix algorithms. Sparse matrices add the additional complexity that data is not cleanly located in blocks.</p>
+<p>Sparse matrices are matrices that have many zero elements in the matrix. Sparse matrices are used in different areas of study from combinatorics to network theory. When using these matrices to analyze</p>
 </div>
 <div id="the-challenge" class="section level2">
 <h2>The Challenge</h2>
