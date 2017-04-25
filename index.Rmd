@@ -36,8 +36,11 @@ We decided to work on the GHC machines because we plan to use OpenMP to parallel
 ## Schedule
 *4/17 - 4/23:* Understand the different optimizations and implement a serial version of sparse matrix multiplication.
 
-*4/24 - 4/30:* Find data sets (matrices) that we can use. Begin to implement the different optimizations on the GHC machines.
+*4/24 - 4/26:* Find data sets (matrices) that we can use. (Toshitha) 
+*4/26 - 4/29*: Pick matrices to use (both). Pick 1 method each and begin implementing (both)
 
-*5/1 - 5/7:* Finish all code and test on different matrices.
+*4/30 - 5/4:* Pick 3rd method and implement (Anisha). Begin writing test cases (Toshitha)
+
+*5/4 - 5/8:* Finish test cases (Toshitha). Begin testing all code that is written (Toshitha and Anisha)
 
 *5/8 - 5/10:* Finalize all the code and finish testing. Run on our benchmark matrices and create the final presentation.
