@@ -14,10 +14,11 @@ Matrix multiplication intrinsically has large communication overhead, with two r
 
 
 ## The Challenge
-This problem is challenging because we will be attempting to speed up the process of multiplying matrices together. We have some ideas from different papers and our prior knowledge in ways to make the multiplication more efficient. However, we will have to test out the different methods such as blocking, etc. Likewise, sparse matrices are different from regular dense matrix multiplication due to the higher presence of zeros. Due to this factor, the matrices themselves can be represented slightly differently in order to make the multiplication more efficient (since 0 values would not need to multiplied). We foresee that finding the best way to represent the matrices will be difficult.
+This problem is challenging because we will be attempting to speed up the process of multiplying matrices together. We have some ideas from different papers and our prior knowledge in ways to make the multiplication more efficient. However, we will have to test out the different methods such as blocking, etc. Likewise, sparse matrices are different from regular dense matrix multiplication due to the higher presence of zeros. Due to this factor, the matrices themselves can be represented slightly differently in order to make the multiplication more efficient (since 0 values would not need to multiplied).
+
 
 ## Resources
-We will be using the GHC machines to complete our project. As of now, our code base will be starting from scratch. However, we will use a couple papers as reference for ways to optimize the multiplication. 
+We will be using the GHC machines to complete our project. As of now, our code base will be starting from scratch. However, we will use a couple papers as reference for ways to optimize the multiplication: 
 https://arxiv.org/ftp/arxiv/papers/1006/1006.2183.pdf
 
 
@@ -31,7 +32,7 @@ We hope to be able to create a disitributed version of sparse matrix multiplicat
 
 
 ## Platform Choice
-We decided to work on the GHC machines because we plan to use OpenMP to parallelize our code. However, we will be just doing it on a single machine. Therefore, the GHC machines are the most accessible/easiest to use. If we finish this part and move on to our HOPE TO ACHIEVE goals, then we will also need the use of the Xeon Phi machines since we will be distributing the work over multiple machines.
+We decided to work on the GHC machines because we plan to use OpenMP to parallelize our code. However, we will be just doing it on a single machine. Therefore, the GHC machines are the most accessible/easiest to use. If we finish this part and move on to our Hope To Achieve goals, then we will also need the use of the Xeon Phi machines since we will be distributing the work over multiple machines.
 
 ## Schedule
 *4/17 - 4/23:* Understand the different optimizations and implement a serial version of sparse matrix multiplication.
