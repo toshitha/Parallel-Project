@@ -3,7 +3,8 @@ output_dir: "."
 navbar:
   title: "15-418 Final Project"
   left:
-    - text: "Proposal"
+    - text: "Final Report"
       href: index.html
-    - text: "Checkpoint"
-      href: about.html
+    - text: "Proposal"
+      href: checkpoint.html
+

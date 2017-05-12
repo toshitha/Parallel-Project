@@ -1,0 +1,48 @@
+---
+title: "Sparse Matrix Multiplication"
+---
+
+by Anisha Padwekar and Toshitha Jagadeesh
+
+## Summary
+We will be implementing Sparse Matrix Multiplication in parallel for this project. Our goal is to find the most efficient way to do this computation in parallel.
+
+## Background
+Sparse matrices, like the large datasets they represent, are becoming increasingly prevalent as a way to reduce memory footprint. The rare use of the majority of words makes sparse matrices common in natural language processing. Likewise, in recommendation systems most users have only rated a small subset of all possible objects. In these cases, algorithms that use these data sets are often based on matrix multiplication, so it is important to find a fast method of multiplying these matrices.
+
+Matrix multiplication intrinsically has large communication overhead, with two reads and a write for the most naïve algorithm. Dense matrix algorithms have traditionally used memory locality to reduce cache misses and reduce communication overhead. In general, blocking schemes are used with dense matrix algorithms. Sparse matrices add the additional complexity that data is not cleanly located in blocks.
+
+
+## The Challenge
+This problem is challenging because we will be attempting to speed up the process of multiplying matrices together. We have some ideas from different papers and our prior knowledge in ways to make the multiplication more efficient. However, we will have to test out the different methods such as blocking, etc. Likewise, sparse matrices are different from regular dense matrix multiplication due to the higher presence of zeros. Due to this factor, the matrices themselves can be represented slightly differently in order to make the multiplication more efficient (since 0 values would not need to multiplied).
+
+
+## Resources
+We will be using the GHC machines to complete our project. As of now, our code base will be starting from scratch. However, we will use a couple papers as reference for ways to optimize the multiplication: 
+https://arxiv.org/ftp/arxiv/papers/1006/1006.2183.pdf
+
+
+## Goals and Deliverables
+
+##### *Plan to Achieve*
+We plan to implement the different algorithms in the paper on the gates machine and optimize to the 4 core processor. We will also create a graph that shows the speed of these algorithms in comparison with each other on a pair of matrices we will consider to be the benchmark.
+
+##### *Hope To Achieve*
+We hope to be able to create a disitributed version of sparse matrix multiplication similar to what we did in Assignment 3. We hope to compare this with our regular version and see which ones work better.
+
+
+## Platform Choice
+We decided to work on the GHC machines because we plan to use OpenMP to parallelize our code. However, we will be just doing it on a single machine. Therefore, the GHC machines are the most accessible/easiest to use. If we finish this part and move on to our Hope To Achieve goals, then we will also need the use of the Xeon Phi machines since we will be distributing the work over multiple machines.
+
+## Schedule
+*4/17 - 4/23:* Understand the different optimizations and implement a serial version of sparse matrix multiplication.
+
+*4/24 - 4/26:* Find data sets (matrices) that we can use. (Toshitha) 
+
+*4/26 - 4/29*: Pick matrices to use (both). Pick 1 method each and begin implementing (both)
+
+*4/30 - 5/4:* Pick 3rd method and implement (Anisha). Begin writing test cases (Toshitha)
+
+*5/4 - 5/8:* Finish test cases (Toshitha). Begin testing all code that is written (Toshitha and Anisha)
+
+*5/8 - 5/10:* Finalize all the code and finish testing (both). Run on our benchmark matrices (Anisha) and create the final presentation (Toshitha).
