@@ -41,7 +41,15 @@ After achieving a fairly efficient speedup, we saw further room for improvement 
 Next, we decided to utilize the knowledge gained in lecture on matrix multiplication particularly transposing the matrix and performing the computation. We kept our parallelization from that we used for the simple parallelization computation and added transposing to it. We had high hopes for this optimization especially since Kayvon went over the different ways that transposing could be used to improve the runtime of matrix multiplication. However, as seen in the speedup graph and the runtime graph below, we see that this optimization was much slower than the parallelized version.
 ![](CSCvsTrans.png)
 
-We also decided that we want 
+Finally, we found a new OpenMP function that does simd instructions (look in references for more information). We put this simd instruction right before accessing elements in the second matrix in order to further parallelize our code. We found that this decreased our runtime by a little bit more than what was found in the localized computation. 
+![](CSCvsSIMD.png)
+Since the SIMD grouping of the matrix multiplication was the fastest out of all of our implementation, we decided to use this algorithm as our reference when seeing the runtime of matrix multiplication on the number of threads. The graph of this is seen below:
+![](Threads.png)
+As expected, we see a decreasing speedup as the number of threads increases especially when we changed from 8 threads to 16 because there were too many factors such as computation overhead and idle threads in order to continue a speedup.
+
+Overall, we found that the fastest way to do matrix multiplication is to parallelize using OpenMP functions particularly the parallel for and the newly found SIMD instructions. Something to note for future 15-418 students is to further dig into the usage of this SIMD
+call and how that may affect code for future projects.
+![](all_time.png)
 
 
 ###REFERENCES
