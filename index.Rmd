@@ -18,6 +18,7 @@ This problem is challenging because we will be attempting to speed up the proces
 
 
 ## RESULT
+![optional caption text](speedup.png)
 
 
 ## LIST OF WORK BY EACH STUDENT
